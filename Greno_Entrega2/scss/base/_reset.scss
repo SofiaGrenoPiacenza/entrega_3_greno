@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fuente-principal;
+  background: $fondo;
+  color: $gris-texto;
+  line-height: 1.6;
+}

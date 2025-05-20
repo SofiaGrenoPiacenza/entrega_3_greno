@@ -1,0 +1,29 @@
+form label {
+  font-weight: 600;
+  color: var(--color-verde-petroleo);
+}
+
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--color-lila);
+  box-shadow: 0 0 8px rgba(150,116,185,0.4);
+}
+
+form button.btn-main {
+  margin-top: 0.5rem;
+  width: 100%;
+  letter-spacing: 1.5px;
+  box-shadow: 0 5px 12px rgba(74,110,122,0.6);
+}

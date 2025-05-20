@@ -1,0 +1,47 @@
+footer {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.7px;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  footer .redes a {
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  footer .redes a:hover {
+    color: var(--color-lila);
+  }
+  
+  footer a {
+    color: #a18adb;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #f3e6ff;
+  }
+  
+  footer i {
+    margin-right: 6px;
+    font-size: 1.15rem;
+    vertical-align: middle;
+  }
+  

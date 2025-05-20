@@ -1,0 +1,204 @@
+/* Variables de color */
+:root {
+  --color-lila: #d8b4e2;
+  --color-verde-petroleo: #00796b;
+  --color-blanco: #ffffff;
+  --color-negro: #212121;
+  --color-gris: #f5f5f5;
+  --color-banner: #ffe0f0;
+  --color-azul: #1565c0; /* Color azul para enlaces */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--color-gris);
+  color: var(--color-negro);
+  line-height: 1.6;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+header {
+  background-color: var(--color-lila);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: var(--color-verde-petroleo);
+  font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-verde-petroleo);
+  color: var(--color-blanco);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #004d40;
+}
+
+/* PORTADA */
+.portada {
+  background-color: var(--color-lila);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.portada h2 {
+  font-size: 2rem;
+  color: var(--color-verde-petroleo);
+  margin-bottom: 1rem;
+}
+
+.portada p {
+  font-size: 1.1rem;
+  color: var(--color-negro);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* SECCIÓN DE PRODUCTOS */
+.seccion {
+  padding: 2rem;
+  text-align: center;
+}
+
+.seccion h3 {
+  color: var(--color-verde-petroleo);
+  margin-bottom: 1rem;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--color-blanco);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h4 {
+  color: var(--color-verde-petroleo);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.card-body .btn {
+  background-color: var(--color-lila);
+  border: none;
+  color: var(--color-blanco);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-body .btn:hover {
+  background-color: var(--color-verde-petroleo);
+}
+
+/* BANNER INFORMATIVO */
+.banner {
+  background-color: var(--color-banner);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.banner h4 {
+  color: var(--color-verde-petroleo);
+  font-size: 1.5rem;
+}
+
+.banner p {
+  color: var(--color-negro);
+  margin-top: 0.5rem;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer .redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+footer .redes a {
+  color: var(--color-blanco);
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+footer .redes a:hover {
+  color: var(--color-lila);
+}
+
+/* Responsividad básica para tarjetas */
+@media (max-width: 600px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

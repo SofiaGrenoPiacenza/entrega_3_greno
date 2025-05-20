@@ -1,0 +1,318 @@
+:root {
+    --color-lila: #d8b4e2;
+    --color-verde-petroleo: #00796b;
+    --color-blanco: #ffffff;
+    --color-negro: #212121;
+    --color-gris: #f5f5f5;
+    --color-banner: #ffe0f0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--color-gris);
+    color: var(--color-negro);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  p {
+    font-weight: 400;
+    opacity: 0.85;
+    font-size: 1.2rem;
+  }
+  
+  header {
+    background-color: var(--color-lila);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    color: var(--color-verde-petroleo);
+    font-size: 1.8rem;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-verde-petroleo);
+    color: var(--color-blanco);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #004d40;
+  }
+  
+  footer {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.7px;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  footer .redes a {
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  footer .redes a:hover {
+    color: var(--color-lila);
+  }
+  
+  footer a {
+    color: #a18adb;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #f3e6ff;
+  }
+  
+  footer i {
+    margin-right: 6px;
+    font-size: 1.15rem;
+    vertical-align: middle;
+  }
+  
+  button, .btn-main, .btn-outline-main {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-main {
+    background: var(--color-verde-petroleo);
+    color: var(--color-blanco);
+    border: 2px solid var(--color-verde-petroleo);
+    border-radius: 30px;
+    padding: 0.6rem 1.6rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.12);
+  }
+  
+  .btn-main:hover {
+    background: var(--color-lila);
+    border-color: var(--color-lila);
+    color: var(--color-blanco);
+    box-shadow: 0 8px 15px rgba(150,116,185,0.6);
+    transform: translateY(-3px);
+  }
+  
+  .btn-outline-main {
+    background: transparent;
+    color: var(--color-verde-petroleo);
+    border: 2px solid var(--color-verde-petroleo);
+    border-radius: 30px;
+    padding: 0.6rem 1.6rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.12);
+  }
+  
+  .btn-outline-main:hover {
+    background: var(--color-verde-petroleo);
+    color: white;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+  }
+  
+  form label {
+    font-weight: 600;
+    color: var(--color-verde-petroleo);
+  }
+  
+  form input,
+  form textarea {
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: var(--color-lila);
+    box-shadow: 0 0 8px rgba(150,116,185,0.4);
+  }
+  
+  form button.btn-main {
+    margin-top: 0.5rem;
+    width: 100%;
+    letter-spacing: 1.5px;
+    box-shadow: 0 5px 12px rgba(74,110,122,0.6);
+  }
+  
+  .portada {
+    background: linear-gradient(135deg, var(--color-verde-petroleo), var(--color-lila));
+    color: white;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    animation: fadeInDown 1.2s ease forwards;
+  }
+  
+  .portada h1 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .portada p {
+    font-size: 1.3rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .portada .botones-portada {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .seccion {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .seccion h3 {
+    color: var(--color-verde-petroleo);
+    margin-bottom: 1rem;
+  }
+  
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: var(--color-blanco);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-body h4 {
+    color: var(--color-verde-petroleo);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-body p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .card-body .btn {
+    background-color: var(--color-lila);
+    border: none;
+    color: var(--color-blanco);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-body .btn:hover {
+    background-color: var(--color-verde-petroleo);
+  }
+  
+  .banner {
+    background-color: var(--color-banner);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .banner h4 {
+    color: var(--color-verde-petroleo);
+    font-size: 1.5rem;
+  }
+  
+  .banner p {
+    color: var(--color-negro);
+    margin-top: 0.5rem;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

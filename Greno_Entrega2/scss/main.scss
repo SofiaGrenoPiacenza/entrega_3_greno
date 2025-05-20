@@ -1,0 +1,20 @@
+// Base
+@import "base/variables";
+@import "base/reset";
+@import "base/typography";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Components
+@import "components/buttons";
+@import "components/form";
+
+// Pages
+@import "pages/home";
+@import "pages/productos";
+@import "pages/banner";
+
+// Utils
+@import "utils/animations";

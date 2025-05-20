@@ -1,0 +1,24 @@
+footer {
+  background: $footer-bg;
+  color: $footer-text;
+  font-size: 0.95rem;
+  letter-spacing: 0.7px;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  a {
+    color: #a18adb;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    @include transition(color);
+    &:hover {
+      color: #f3e6ff;
+    }
+  }
+
+  i {
+    margin-right: 6px;
+    font-size: 1.15rem;
+    vertical-align: middle;
+  }
+}

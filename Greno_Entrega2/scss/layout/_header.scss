@@ -1,0 +1,33 @@
+header {
+    background-color: var(--color-lila);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    color: var(--color-verde-petroleo);
+    font-size: 1.8rem;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-verde-petroleo);
+    color: var(--color-blanco);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #004d40;
+  }
+  

@@ -1,0 +1,30 @@
+.portada {
+    background: linear-gradient(135deg, var(--color-verde-petroleo), var(--color-lila));
+    color: white;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    animation: fadeInDown 1.2s ease forwards;
+  }
+  
+  .portada h1 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .portada p {
+    font-size: 1.3rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .portada .botones-portada {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  

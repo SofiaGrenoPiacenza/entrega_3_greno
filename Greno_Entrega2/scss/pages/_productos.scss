@@ -1,0 +1,67 @@
+.seccion {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .seccion h3 {
+    color: var(--color-verde-petroleo);
+    margin-bottom: 1rem;
+  }
+  
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: var(--color-blanco);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-body h4 {
+    color: var(--color-verde-petroleo);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-body p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .card-body .btn {
+    background-color: var(--color-lila);
+    border: none;
+    color: var(--color-blanco);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-body .btn:hover {
+    background-color: var(--color-verde-petroleo);
+  }
+  
